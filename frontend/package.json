@@ -1,0 +1,30 @@
+{
+  "name": "mlops-intelligent-analyzer-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .jsx,.js",
+    "test": "react-scripts test --env=jsdom",
+    "format": "prettier --write src"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chart.js": "^4.3.0",
+    "framer-motion": "^10.12.16",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.1",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.42.0",
+    "prettier": "^3.0.1",
+    "vite": "^4.3.9"
+  }
+}

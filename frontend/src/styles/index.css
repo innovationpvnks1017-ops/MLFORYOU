@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+}
+
+button:focus {
+  @apply outline-none ring-2 ring-blue-500;
+}

@@ -1,0 +1,13 @@
+fastapi==0.95.2
+uvicorn[standard]==0.22.0
+sqlalchemy==2.0.19
+databases==0.6.4
+pydantic==1.10.7
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+scikit-learn==1.2.2
+joblib==1.2.0
+websockets==11.0.3
+pytest==7.4.0
+pytest-asyncio==0.21.0
+alembic==1.11.1
