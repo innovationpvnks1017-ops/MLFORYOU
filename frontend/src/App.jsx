@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 import LandingPage from "./components/LandingPage";
-import Auth from "./components/Auth/Auth";
-import Dashboard from "./components/Dashboard/Dashboard";
-import AdminPanel from "./components/AdminPanel/AdminPanel";
+import Auth from "./components/Auth/RegisterForm";
+import Authentication from "./components/Auth/LoginForm";
+import Dashboard from "./components/Dashboard/DatasetSelector";
+import AdminPanel from "./components/AdminPanel/RunManagement";
 
 import { ThemeProvider } from "./context/ThemeContext";
 import { AuthProvider, useAuth } from "./context/AuthContext";
+
 
 function RequireAuth({ children, adminOnly = false }) {
   const { user, loading } = useAuth();
@@ -35,6 +37,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/auth/*" element={<Auth />} />
+          <Route path="/auth/*" element={<Authentication />} />
           <Route
             path="/dashboard/*"
             element={
